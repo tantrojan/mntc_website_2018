@@ -1,0 +1,113 @@
+
+  .fullpage-event-toggler{
+    display: block;
+    position: fixed;
+    width:20%;  
+    top:50px;
+    height: 100vh;
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.267);
+    box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.9);
+
+  }
+
+  .fullpage-event-toggler  h2 {
+    padding-bottom: 10px;
+    font-size:26px;
+  }
+
+  .fullpage-event-toggler > ul{
+    flex-direction: column;
+    width: 100%;
+    text-align: right;
+    justify-content: center;
+    list-style:none;
+    padding-top: 10px;
+  }
+
+  .fullpage-event-toggler li{
+    margin-bottom: 10px;
+  }
+
+  .fullpage-event-toggler  a{
+    text-decoration: none;
+    /* padding: 3px; */
+    color: #fff;
+    font-size:20px;
+  }
+
+  .fullpage-event-toggler .active{
+    padding: 3px;
+    color:white;
+    font-size:24px;
+    font-weight: 900;
+    text-decoration: overline;
+    /* text-decoration-line: underline; */
+    border-radius: 5px;
+  }
+
+  /* .fullpage-event-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .click-more-events{
+    padding-top:100%;
+    position: relative;
+  }
+
+  .click-more-events > a >h2{
+    color: cyan;
+  }
+
+  .fullpage-event-content{
+    display: flex;
+    float: right;
+    width:65%;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    background-color: rgba(0, 0, 0, 0.267);
+    box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.9);
+    margin: 10px;
+    border-radius: 5px;
+    margin-right: 10%;
+  }
+
+  .fullpage-event-content > h1{
+    font-size: 46px;
+    padding:20px 20px;
+    text-align: left;
+  }
+  .fullpage-event-desc{
+    font-size: 20px;
+    padding:20px 20px;
+    padding-right: 10%;
+    text-align: justify;
+  }
+
+  .header-sm-screen{
+    display: none;
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .fullpage-event-toggler{
+      display: none;
+    }
+    .fullpage-event-content{
+      display: flex;
+      width:90%;
+      flex-direction: column;
+      margin: 10px auto;
+      padding: 0;
+      float: none;
+    }
+    .fullpage-event-desc{
+      text-align: center;
+    }
+    .fullpage-event-content > h1{
+      text-align: center;
+    }
+    .header-sm-screen{
+      display: block;
+    }
+  }

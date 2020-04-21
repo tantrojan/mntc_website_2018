@@ -1,0 +1,60 @@
+
+.site-footer img{
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    padding: 3px;
+    line-height: 0;
+    max-width: 100%;
+}
+
+
+.firstpage-footer img{
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    padding: 3px;
+    line-height: 0;
+    max-width: 100%;
+}
+
+.footer-info{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Lobster;
+}
+
+.social-icons{
+    display: flex;
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+}
+
+hr {
+    border: 0; height: 1px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.icon {
+    padding: 8px 8px;
+    display: block;
+}
+
+.icon a{
+    color: #fff;
+    cursor: pointer !important;
+}
+.icon i:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+.credit-text{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-family: pacifico;
+    font-size: 15px;
+}
+
+

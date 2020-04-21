@@ -1,0 +1,128 @@
+.firstpage-header {
+    position: fixed;
+    z-index: 1000;  
+    width: 100%;
+    margin: 0;
+    background: none;
+    background: linear-gradient(to top left, #ffffff00  0%,#00000000 82%);    
+    transition: all 1s;
+}
+
+.firstpage-navbar {
+    height: 50px !important;
+    min-height: 50px !important;
+    max-height: 50px !important;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    white-space: nowrap;
+    color: white;
+}
+
+.firstpage-logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding:0 16px;
+}
+
+.firstpage-logo img{
+    height: 30px;
+    /* width: 108px; */
+    line-height: 0;
+    max-width: 100%;
+}
+
+.firstpage-navbar-button{
+    background-color: inherit;
+    color:inherit;
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 88px;
+    line-height: 36px;
+    padding: 0 16px;
+    overflow: visible;
+    font-weight: 900;
+    font-family: 'Bree Serif';
+    font-size: 14px;
+}
+
+.firstpage-navbar-button:hover{
+    background-color:rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #239ab4;
+    padding-top: 3px;
+}
+
+.about-page{
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    flex-direction: row;
+}
+
+.about-page-image{
+    width: 40%;
+    display: block;
+}
+
+.about-page-image > img {
+    width: 100%;
+}
+.about-page-content{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.carousel {
+    display: block;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .about-page-image{
+       display: none;
+    }
+    .about-page-content{
+        width:100%;
+        display: block;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .carousel {
+        display: none;
+    }
+    .about-page{
+        flex-direction: column;
+    }
+    .about-page-image{
+        display: block;
+        width: 40%;
+        margin:0 auto;
+     }
+    .about-page-content{
+        width:100%;
+        display: block;
+        text-align: center;
+    }
+}

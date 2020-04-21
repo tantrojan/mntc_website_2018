@@ -1,0 +1,117 @@
+ @import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto|Raleway'); 
+ @import url('https://fonts.googleapis.com/css?family=Lobster|Rubik|Bree+Serif');
+ @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Cookie');
+ @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  position: relative;
+  overflow-x: hidden;
+
+  columns: #000000;
+  background-image: url("./static/images/bg/bg4.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* FONT */
+  font-family:Raleway;
+  font-size: 16px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  -webkit-text-size-adjust: 100%;
+}
+.full-vh {
+  height: 134vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* PRELOADER CSS */
+.preloader-active {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#preloader {
+  height: 100vh;
+  width:100vw;
+  background-color: #ffffff;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+#preloader > img{
+  margin:auto;
+}
+
+/*BODY CSS WIDTH 90%*/
+.site-body{
+  width:90%;
+  margin: 0 auto;
+  display: block;
+  align-content: center;
+  text-align: center;
+  overflow: auto;
+  min-height:100vh;
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 150px;
+  z-index: 0;
+}
+
+
+/*BODY CSS WIDTH 90%*/
+.site-body-full{
+  width:100%;
+  margin: 0 auto;
+  display: block;
+  align-content: center;
+  text-align: center;
+  overflow: auto;
+  min-height:100vh;
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 150px;
+  z-index: 0;
+}
+
+/* FOOTER CSS */
+.site-footer{
+  bottom:0px;
+  padding: 10px 30px;
+  position: absolute;
+  background-color: #0c4265;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: auto;
+  color :white;
+  background: linear-gradient(to top left, #252d2d  0%,#000000 82%);
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+  align-content: center;
+  height: 140px;
+}
+
+h1{
+  font-size: 30px;
+  padding:10px 0;
+}
+
+.quote{
+  font-size: 24px;
+  font-family: "Bree Serif";
+}
+

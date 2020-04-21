@@ -1,0 +1,142 @@
+.card-image{
+    height:150px;
+    width: 150px;
+    align-content: center;
+    overflow: hidden;
+}
+.card-image > img{
+    height: auto;
+    width: 100%;
+}
+.card-info> h1{
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
+    margin:0 auto;
+    line-height: 15px;
+    overflow-wrap:break-word;
+}
+.card-info> p{
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  margin:0 auto;
+  line-height: 15px;
+  overflow-wrap:break-word;
+}
+
+
+
+/* Newly Added */
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+
+.member-card {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-family: Roboto;
+  transition:all 2s ease-in;
+}
+
+.inactive-member-card {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  display: none;
+  flex-direction: column;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-family: Roboto;
+  transition:all 2s ease-in;
+}
+
+.member-card .color-overlay {
+  /* Rectangle 11: */
+  background: rgba(84, 104, 110, 0.1);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+.member-card .gradient-overlay {
+  /* bg-gradient: */
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+  width: 150px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index:50;
+}
+.member-card:hover .card-info {
+  opacity: 1;
+  bottom: 30px;
+}
+.member-card:hover .color-overlay {
+  background: rgba(84, 104, 110, 0.8);
+}
+
+.card-info {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 5px;
+  color: #DCE3E7;
+  font-family: 'Droid Serif', serif;
+  font-style: 12px;
+  line-height: 24px;
+  z-index: 100;
+  opacity: 0;
+  text-align: center;
+  transition: bottom 0.3s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.team-toggle{
+  display: flex;
+  justify-content: center;
+  padding:5px;
+}
+.team-toggle>li{
+  display: flex;
+  padding: 10px;
+}
+
+.team-toggle>li>a{
+  text-decoration: none;
+  color: #fff;
+  font-family: "Bree Serif";
+}
+.team-toggle>li>a:hover{
+  color: #239ab4;
+}
+
+.team-toggle .active > a {
+  color: #fff;
+  text-decoration: overline;
+  padding:0 10px;
+  border-radius: 5%;
+}

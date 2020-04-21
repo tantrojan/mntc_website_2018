@@ -1,0 +1,95 @@
+.contact-page{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-col{
+    width:50%;
+    font-family: "Bree Serif";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-col-img{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-col-img > img {
+    width:100%;
+}
+.contactcrd-holders{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contactcard{
+    display: flex;
+    width: 340px;
+    height: 120px;
+    margin: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.267);
+    border-radius:5px;
+    overflow: hidden;
+    /* border-right: 10px solid #239ab4; */
+    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.9);
+}
+
+.contactphoto{
+    width:100px;
+    display: flex;
+    transform-origin: bottom left;
+    align-items: center;
+    overflow: hidden;
+}
+.contactphoto > img {
+    height:100%;
+    width: auto;
+}
+.contactinfo{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding:20px 10px;
+    align-items: flex-start;
+    font-size: 14px;
+    color: #fff;
+}
+.contactlink{
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #239ab4;
+}
+.contactlink > a{
+    color: #fff;
+}
+.contactlink > a:hover{
+    transform: scale(1.1);
+}
+
+.contactinfo > .post{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 720px) {
+    .contact-col{
+        width:100%;
+    }
+    .contact-page{
+        flex-direction: column-reverse;
+    }
+    .contactcard{
+        transform: scale(0.8);
+        margin: 0;
+    }
+
+  }
