@@ -7,7 +7,7 @@ import imageSrc from "../static/images/trailor.png";
 class Aavishkar extends Component{
     constructor(props){
         super(props);
-        this.state = { 
+        this.state = {
             active_menu: 'all'
         }
     }
@@ -43,7 +43,7 @@ class Aavishkar extends Component{
                 'type': ['brain'],
                 'src' : './assets/events/bd.jpeg',
                 'desc':' An event where participants aim darts towards sectors on the dart board embedding the highest multiplier. Further, they are required to solve brain teasers, tailored to their calibre owing to the provision of choice in difficulty pack.'
-                
+
             },
             {
                 'name': 'Call Out Sherlock',
@@ -143,7 +143,7 @@ class Aavishkar extends Component{
                     <div className="event-groups">
                         {
                             festEvents.map(( item,index ) => (
-                                ( item.type.indexOf(this.state.active_menu) !== -1 || this.state.active_menu === 'all' )? 
+                                ( item.type.indexOf(this.state.active_menu) !== -1 || this.state.active_menu === 'all' )?
                                 <div className={index%2==0?'blog-card':'blog-card alt'} key={index}>
                                     <div className="meta">
                                         <div className="photo" style={{'background-image': 'url('+item.src+')'}}></div>
@@ -159,22 +159,7 @@ class Aavishkar extends Component{
                         }
                     </div>
                 </div>
-                {/* <div className='site-body'>
-                    <h1>Flagship Events</h1>
-                    {flagshipEvents.map((item,index)=>(
-                        <div className={index%2==0?'blog-card':'blog-card alt'} key={index}>
-                            <div className="meta">
-                                <div className="photo" style={{'background-image': 'url('+item.src+')'}}></div>
-                            </div>
-                            <div className="description">
-                                <h1>{item.name}</h1>
-                                <h2>Opening a door to the future</h2>
-                                <p> {item.desc}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div> */}
-            </div> 
+            </div>
         )
     }
 }

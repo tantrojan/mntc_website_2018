@@ -7,7 +7,7 @@ import './css/team.css';
 class Team extends Component {
     constructor(props){
         super(props);
-        this.state = { 
+        this.state = {
             active_menu: 'fourth'
         }
     }
@@ -42,12 +42,6 @@ class Team extends Component {
                 'year': 'fourth'
             },
             {
-                'name':'Nidhi Kumar Yadav',
-                'post':'General Secretary',
-                'src': 'nidhi',
-                'year': 'fourth'
-            },
-            {
                 'name':'Sudipto Mukherjee',
                 'post':'Treasurer',
                 'src': 'sudipto',
@@ -66,12 +60,6 @@ class Team extends Component {
                 'year': 'fourth'
             },
             {
-                'name':'Utkarsh Jaiswal',
-                'post':'Assistant General Secretary',
-                'src': 'utkarsh',
-                'year': 'fourth'
-            },
-            {
                 'name':'Bhanu Prakash',
                 'post':'Sponsorship Head',
                 'src': 'bhanu',
@@ -82,7 +70,7 @@ class Team extends Component {
                 'post':'Web-D Head',
                 'src': 'shikha',
                 'year': 'fourth'
-            },            
+            },
             {
                 'name':'Shivansh Kumar Dubey',
                 'post':'Logistics Head',
@@ -95,12 +83,6 @@ class Team extends Component {
                 'src': 'shaista',
                 'year': 'fourth'
             },
-            {
-                'name':'Vikas Kumar',
-                'post':'Publicity Head',
-                'src': 'vikas',
-                'year': 'fourth'
-            },            
             {
                 'name':'Iimon Tarun Kataki',
                 'post':'Workshop Head',
@@ -125,16 +107,6 @@ class Team extends Component {
                 'year': 'third'
             },
             {
-                'name':'Adrish Bir',
-                'src': 'adrish',
-                'year': 'third'
-            },
-            {
-                'name':'Avinash Boppudi',
-                'src': 'avinash',
-                'year': 'third'
-            },
-            {
                 'name':'Brijesh',
                 'src': 'brijesh',
                 'year': 'third'
@@ -150,11 +122,6 @@ class Team extends Component {
                 'year': 'third'
             },
             {
-                'name':'Hariharan',
-                'src': 'hariharan',
-                'year': 'third'
-            },
-            {
                 'name':'Nikhil Murarka',
                 'src': 'nikhil',
                 'year': 'third'
@@ -165,18 +132,8 @@ class Team extends Component {
                 'year': 'third'
             },
             {
-                'name':'Samriddhi Gupta',
-                'src': 'samriddhi',
-                'year': 'third'
-            },
-            {
                 'name':'Satantra Tiwari',
                 'src': 'satantra',
-                'year': 'third'
-            },
-            {
-                'name':'Sayanti Dey',
-                'src': 'sayanti',
                 'year': 'third'
             },
             {
@@ -205,23 +162,8 @@ class Team extends Component {
                 'year': 'third'
             },
             {
-                'name':'Vijaya Bhuvanagiri',
-                'src': 'vijaya',
-                'year': 'third'
-            },
-            {
-                'name':'Aadarsh Shaw',
-                'src': 'aadarsh',
-                'year': 'second'
-            },
-            {
                 'name':'Abhinav Prakash',
                 'src': 'abhinav',
-                'year': 'second'
-            },
-            {
-                'name':'Ambica Agarwal',
-                'src': 'ambica',
                 'year': 'second'
             },
             {
@@ -230,18 +172,8 @@ class Team extends Component {
                 'year': 'second'
             },
             {
-                'name':'Arpan Saha',
-                'src': 'arpan',
-                'year': 'second'
-            },
-            {
                 'name':'B Padmini',
                 'src': 'padmini',
-                'year': 'second'
-            },
-            {
-                'name':'G.Bhanu Teja',
-                'src': 'gbhanu',
                 'year': 'second'
             },
             {
@@ -255,21 +187,6 @@ class Team extends Component {
                 'year': 'second'
             },
             {
-                'name':'Manish Awasthi',
-                'src': 'manish',
-                'year': 'second'
-            },
-            {
-                'name':'Manisha Bhosley',
-                'src': 'manisha',
-                'year': 'second'
-            },
-            {
-                'name':'Prachi Sharma',
-                'src': 'prachi',
-                'year': 'second'
-            },
-            {
                 'name':'Riddhiman Sanyal',
                 'src': 'riddhiman',
                 'year': 'second'
@@ -280,35 +197,10 @@ class Team extends Component {
                 'year': 'second'
             },
             {
-                'name':'Saddam Ansari',
-                'src': 'saddam',
-                'year': 'second'
-            },
-            {
-                'name':'Sai Kotesh K',
-                'src': 'kotesh',
-                'year': 'second'
-            },
-            {
-                'name':'Sangram Mukherjee',
-                'src': 'sangram',
-                'year': 'second'
-            },
-            {
-                'name':'Shamik Choudhury',
-                'src': 'shamik',
-                'year': 'second'
-            },
-            {
                 'name':'S.K. Praliya',
                 'src': 'praliya',
                 'year': 'second'
             },
-            {
-                'name':'Washim Raza',
-                'src': 'washim',
-                'year': 'second'
-            }
         ]
         AOS.init({
             duration : 2000
@@ -337,9 +229,9 @@ class Team extends Component {
                                     <h1>{item.name}</h1>
                                     <p>{item.post}</p>
                                 </div>
-                               
+
                                 <div class="gradient-overlay"></div>
-                                <div class="color-overlay"></div>       
+                                <div class="color-overlay"></div>
                             </div>
                         ))
                     }

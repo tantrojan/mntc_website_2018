@@ -8,7 +8,7 @@ export default class extends React.Component {
     scrollfunc(){
         $('html, body').animate({
             scrollTop: $("#aboutus").offset().top
-        }, 2000);  
+        }, 2000);
     }
     render() {
         let carouselItems = [
@@ -21,14 +21,14 @@ export default class extends React.Component {
                 'caption': "Instilling rational and logical thinking in inquisitive minds."
             },
             {
-                'name': '3.jpg',
+                'name': '1.jpg',
                 'caption': "Integrating Moments"
             }
         ]
       return (
-        <Carousel 
-            autoplay="false" 
-            autoplayInterval="4000" 
+        <Carousel
+            autoplay="false"
+            autoplayInterval="4000"
             wrapAround="true"
             renderCenterLeftControls={({ previousSlide }) => (
                 <i onClick={previousSlide} className="fa fa-chevron-left fa-2x"></i>
@@ -46,12 +46,12 @@ export default class extends React.Component {
                         <div className="image-desc-container">
                             <p>{item.caption}</p>
                             <i className="fa fa-angle-double-down" style={{'cursor':'auto'}}></i>
-                            
+
                         </div>
-                        <Particles 
+                        <Particles
                             params={{
                             particles: {
-                                number:{ 
+                                number:{
                                     value : 150
                                 }
                             }

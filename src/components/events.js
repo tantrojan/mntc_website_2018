@@ -9,7 +9,7 @@ import { withRouter, Link } from 'react-router-dom';
 class Event extends Component{
     constructor(props){
         super(props);
-        this.state = { 
+        this.state = {
             active_event: 'ankshala'
         }
     }
@@ -59,7 +59,7 @@ class Event extends Component{
             {
                 'name':'Ankshala',
                 'desc':'Ankshala is an aptitude test conducted in various schools in and around Durgapur,Asansol,Burdwan and Bankura.This is done to install a sense of competitiveness and to see the problem solving abilities among the students.The top students meet for the final clash at NIT Durgapur.',
-                'src':[{'src':'./assets/events/ankshala/bidhan.jpg'},{'src':'./assets/events/ankshala/guruteg.jpg'},{'src':'./assets/events/ankshala/hemsheela.jpg'},{'src':'./assets/events/ankshala/kvcmeri.jpg'},{'src':'./assets/events/ankshala/peters.jpg'},{'src':'./assets/events/ankshala/xaviers.jpg'}],
+                'src':[{'src':'./assets/events/ankshala/bidhan.jpg'},{'src':'./assets/events/ankshala/guruteg.jpg'},{'src':'./assets/events/ankshala/hemsheela.jpg'},{'src':'./assets/events/ankshala/kvcmeri.jpg'},{'src':'./assets/events/ankshala/xaviers.jpg'}],
                 'value' : 'ankshala'
             },
             {
@@ -71,7 +71,7 @@ class Event extends Component{
             {
                 'name':'Terrorist Takedown',
                 'desc':'It is a test of both speed and skill, as the race is not just within the mind, but extends to the physical world where the team is required to hunt for clues, decipher the coded message and reach successive checkpoints.',
-                'src':[{'src':'./assets/events/tt/1.jpg'},{'src':'./assets/events/tt/2.jpg'},{'src':'./assets/events/tt/3.jpg'},{'src':'./assets/events/tt/4.jpg'}],
+                'src':[{'src':'./assets/events/tt/1.jpg'},{'src':'./assets/events/tt/2.jpg'},{'src':'./assets/events/tt/3.jpg'}],
                 'value' : 'terrorist_takedown'
             }
             // ,
@@ -79,15 +79,15 @@ class Event extends Component{
             //     'name' : 'TIME scholarship Test',
             //     'desc':'Ansible is a free software tool that allows you to configure and manage nodes. This is achieved by creating groups of machines and describing which actions should be taken on them. The required commands for this are issued from a central location. It has various built-in modules to allow easy configuration management. It uses SSH to connect to different nodes and hence nothing needs to be installed on the targeted machines. Ansible only runs on the main control machine which runs the commands.',
             //     'src':[{'src':'/assets/events/ankshala/bidhan.jpg'},{'src':'/assets/events/ankshala/guruteg.jpg'},{'src':'/assets/events/ankshala/hemsheela.jpg'},{'src':'/assets/events/ankshala/kvcmeri.jpg'},{'src':'/assets/events/ankshala/peters.jpg'},{'src':'/assets/events/ankshala/xaviers.jpg'}],
-            //     'value' : 'time'   
+            //     'value' : 'time'
             // }
         ]
         return(
             <div className="site-body-full" >
                 <div className="fullpage-event-toggler">
                     <ul>
-                    <h2>Flagship Events</h2>   
-                    <br/> 
+                    <h2>Flagship Events</h2>
+                    <br/>
                     {this.eventToggle.map((item, index)=>(
                         <li>
                             <a href="" className={(item.value === this.state.active_event)?'active':null} key={index} onClick={(e)=>{e.preventDefault(); this.handleScrollEvent(item.value);}}>{item.name}</a>

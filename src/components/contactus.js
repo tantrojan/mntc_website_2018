@@ -1,10 +1,9 @@
 import './css/contactus.css';
 import React,{ Component } from 'react';
-import videoSrc from "../static/videos/video.mp4";
 import contact from "../static/images/contact.svg";
 
 class ContactUs extends Component{
-    
+
     render(){
         let postHolders=[
             {
@@ -30,21 +29,13 @@ class ContactUs extends Component{
                 'phone':'8158892279',
                 'src':'sudipto',
                 'fb' :'https://www.facebook.com/msudipto9'
-            },
-            {
-                'name':'Nidhi Kumar Yadav',
-                'post':'General Secretary',
-                'email':'nidhi.sagar.yadav@gmail.com',
-                'phone':'7679883025',
-                'src':'nidhi',
-                'fb': 'https://www.facebook.com/nidhi.yadav.18294053',
             }
         ]
         return (
             <div className="site-body">
                 <h1> Get in touch with us </h1>
                 <hr/>
-                <div className="contact-page">   
+                <div className="contact-page">
                     <div className="contact-col">
                         <div className="contactcard-holders">
                             {postHolders.map((item,index)=>(
@@ -75,7 +66,7 @@ class ContactUs extends Component{
                         <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmathsntechclub%2F&width=152&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId" width="152" height="46" style={{"border":"none", "overflow":"hidden"}} scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
-            </div> 
+            </div>
         )
     }
 }
